@@ -1,0 +1,20 @@
+//FActorial of a given number using recursion
+#include <iostream>
+using namespace std;
+int fact(int);//function declaration
+main(){
+	int n ;
+	cout<<"Enter n value:"<<endl;
+	cin>>n;
+	cout<<"factorial of "<<n<<"is"<<fact(n);//function calling
+}
+//function definition
+int fact(int num){
+	if (num==0 ||num==1){
+		return 1;
+		
+	}else{
+		return num*fact(num-1);//recursive function+
+	}
+}
+	
